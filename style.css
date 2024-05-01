@@ -1,0 +1,138 @@
+.container{
+    
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 30px auto;
+    overflow-x: scroll;
+    border: 0.5px solid #c0c0c0;
+    box-sizing: border-box;
+
+}
+.headRow{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.plate{
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.headRow .colHead{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0.5px solid #c0c0c0;
+}
+
+.sno{
+
+    position:sticky;
+    left: 0;
+    background-color: white;
+}
+
+.sno .snoCell{
+    height: 30px;
+    border: 0.5px solid #c0c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+}
+.cell{
+    border: 0.5px solid #c0c0c0;
+    width: 150px;
+    height: 30px;
+
+}
+.options{
+    background-color: #f8fbfd;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-container{
+    padding: 10px;
+    background-color: #edf2fa;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px;
+
+}
+.align-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+input[type="checkbox"] , input[type="radio"] {
+    display: none;
+}
+input[type="color"]{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+input[type="checkbox"]:checked +label , input[type="radio"]:checked +label {
+    background-color: #d3e2fd;
+}
+label{
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+    width: 80vw;
+    margin: auto;
+}
+.selected-cell{
+    background-color:#d3e2fd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40px;
+}
+#inputBox{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 0.5px;
+}
+.active-cell:focus {
+    outline: none;
+}
+.active-cell{
+    border: 1px solid #0957d0; 
+    position: relative;
+    border-radius: 2px;
+    z-index: 10;
+}
+.srcDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 7px;
+    gap: 5px;
+}
+.srcDiv , input{
+    border: none;
+}
